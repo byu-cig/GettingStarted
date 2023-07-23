@@ -18,7 +18,7 @@ It's important to understand that statistical inference is based on the sound ma
 
 Sets are collections of objects with no restriction on what those objects are. In terms of probability theory, a set will have an associated probability with each element of the set. For example, consider rolling a die. There are 6 possible outcomes, so our set, which we'll call $S$ is a six element set. So, we have that
 
-$$S = \{1, 2, 3, 4, 5, 6\}$$
+$$S = \\\{1, 2, 3, 4, 5, 6\\\}$$
 
 In our case, we will assume that all possibilities have a probability of 1/6. While it may be obvious, it is important to note that the sum of all possibilities is equal to one.
 
@@ -55,3 +55,14 @@ The other half of i.i.d. is identically distributed. This means that the distrib
 
 ## Multivariate Distributions
 
+In the context of our research, multivariate distributions arise mainly because we have lot of data, which has an unknown joint distrribution. However, if the data is indpendent, the joint distribution can be found easily. Because independence mathematically means multiplication, the joint distribution of independent data is the PDFs or PMFs of the data multiplied together. The main difference between inference with multivariate distributions versus univariate distributions is the change in demensionality of the operators used. The most applicable are the mean and variance, which are changed to a vector and a matrix, respectively.
+
+## Further Study
+
+This writeup is by no means a proper introduction in probability theory. Rather, it gives an introduction to specific terminology that you will immediately encounter while working on the research projects in the byu coherent imaging group. Additionaly topics that are just as fundamental and are worth looking up are:
+
+- Cumulative Distribution Functions
+- Expected Values
+- Conditional Distributions
+- Probability Transformations
+- Bayes Theorem
